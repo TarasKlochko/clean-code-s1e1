@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.matrix img {
+.matrix .matrix-img {
   width: 100%;
 }
 .matrix .more-inf {
@@ -38,7 +38,7 @@ ul {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+li, .title {
   list-style:none;
 }
 input,button{
@@ -57,8 +57,7 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -67,7 +66,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.input, .input-new {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,19 +78,19 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input:focus,.input-new:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.title {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
   width: 318px;
 }
-p > button:hover {
+.btn-add:hover {
   color: #0fc57c;
 }
 
@@ -121,34 +120,34 @@ li > label {
 li >    input[type="text"] {
   width: 226px
 }
-li > button.delete:hover {
+li > .delete:hover {
   color: #cf2323;
 }
-button.delete img {
+.delete .img-btn {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete .img-btn:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks .task {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.input {
   display:none
 }
 
-ul li.edit-mode input[type=text] {
+.edit-mode .input {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+.edit-mode .label {
   display:none;
 }
