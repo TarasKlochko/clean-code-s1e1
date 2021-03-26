@@ -19,7 +19,8 @@ body {
 
 @media (max-width: 768px) {
 
-  .matrix { text-align: center;
+  .matrix { 
+    text-align: center;
   }
 
 }
@@ -40,10 +41,12 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li, .title {
+li, 
+.title {
   list-style: none;
 }
-input,button{
+input,
+button{
   outline: none;
 }
 button {
@@ -68,7 +71,8 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-.input, .input-new {
+.input, 
+.input-new {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -80,7 +84,8 @@ button:hover {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.input:focus,.input-new:focus {
+.input:focus,
+.input-new:focus {
   color: #333;
 }
 
@@ -101,7 +106,6 @@ li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
