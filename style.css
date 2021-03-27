@@ -4,22 +4,22 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
-.matrix {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.matrix .matrix-img {
+.header__img {
   width: 100%;
 }
-.matrix .more-inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .matrix { 
+  .header { 
     text-align: center;
   }
 
@@ -34,7 +34,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrap {
+.add__wrap {
   display: flex;
 }
 ul {
@@ -71,7 +71,7 @@ button{
   text-transform: uppercase;
 }
 .input, 
-.input-new {
+.add__input-new {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -84,7 +84,7 @@ button{
   color: #888;
 }
 .input:focus,
-.input-new:focus {
+.add__input-new:focus {
   color: #333;
 }
 
@@ -96,7 +96,7 @@ button{
 #new-task {
   width: 318px;
 }
-.btn-add:hover {
+.add__btn:hover {
   color: #0fc57c;
 }
 
@@ -118,7 +118,7 @@ button{
   font-size: 18px;
   width: 226px;
 }
-.input, .input-new {
+.input, .add__input-new {
   width: 226px;
 }
 .delete:hover {
